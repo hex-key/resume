@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{xcolor}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+
+% \pagestyle{fancy}
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    %\color{blue}
+    \textbf{\huge \scshape Iris Chen} \\ \vspace{8pt}
+    \faEnvelope{} \href{irichen@umass.edu}{irichen@umass.edu} $\quad$ 
+    \faPhone{} \href{tel:3109679553}{(310) 967-9553} $\quad$
+    \faLinkedin{} \href{https://www.linkedin.com/in/irischen5/}{@irischen5} $\quad$
+    \faGithub{} \href{https://github.com/hex-key/}{hex-key} $\quad$
+    % \faGlobe{} \href{https://irischen.dev}{irischen.dev} $\quad$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts - Amherst}{August 2023 -- May 2027}
+      {Projected: Bachelor of Science in \textbf{Computer Engineering} \& minor in \textbf{Linguistics}}{}
+        \begin{itemize}\small
+        \setlength\itemsep{0em}
+            \item[--] \textbf{Relevant Coursework:} Calculus II, Intro. to Electrical \& Computer Engineering, First-Year Seminar in Marine Renewable Technologies \& Energy Equity. \emph{\textbf{Spring 2024}: Linear Algebra, Intro. to Digital \& Computer Systems, Intro. to Programming for ECE.}
+        \end{itemize}
+    \vspace{-5pt}
+    \resumeSubheading
+      {Harvard-Westlake School}{August 2019 -- June 2023}
+      {}{}
+      \vspace{-11pt} 
+      \begin{itemize}\small
+        \setlength\itemsep{0em}
+            \item[--] \textbf{Relevant Coursework:} Honors Design and Data Structures, Honors Topics in Computer Science, Intro. to Engineering, AP Computer Science A, AP Calculus BC, AP Physics C: Mechanics, AP Physics C: Electricity \& Magnetism, AP Statistics
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%   \vspace{-15pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming: }{Java, C++, Python [BS4/Selenium], JavaScript/HTML/CSS, MATLAB, Microsoft Visual Basic, Google Firebase} \\
+    }}
+    \vspace{-2pt}
+    \small{\item{
+     \textbf{Electronics: }{Arduino, Raspberry Pi, through-hole and surface mount soldering, breadboarding} \\
+    }}
+    \vspace{-2pt}
+    \small{\item{
+     \textbf{3D and CAD: }{Modeling and simulations using Autodesk Fusion 360 \& Inventor, SolidWorks, building/calibrating FDM printers} \\
+    }}
+    \vspace{-2pt}
+    \small{\item{
+        \textbf{Language: }{Fluent in Chinese and French; studying Latin, Ancient Greek and Arabic} \\
+       }}
+ \end{itemize}
+
+%  \vspace{-15pt}
+
+%-----------EXPERIENCE----------- 
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Debate Coach}{May 2023 -- Present}
+      {DebateDrills Lincoln-Douglas Club Team}{}
+      \begin{itemize}\small
+      \setlength\itemsep{0em}
+          \item[--] Produce research on topics including lethal autonomous weapons, outer space privatization, US foreign policy, and renewable energy. Provide debaters with background knowledge and instruct them to advocate for the costs and benefits of related policies.
+          \item[--] Develop lesson plans and slideshows for 15+ coaches teaching 40+ high school debaters across 3 skill levels.
+          \item[--] Lead practices (10-20 students), hold 1-on-1 sessions, moderate practice debates, and provide on-site coaching at tournaments.
+      \end{itemize}
+      \vspace{-5pt}
+
+    \resumeSubheading
+      {Debate Camp Instructor}{June -- August 2023}
+      {Victory Briefs Institute \& The Debate Intensive -- 7 weeks across 3 sessions}{}
+      \begin{itemize}\small
+      \setlength\itemsep{0em}
+        \item[--] Led labs of 8-12 students with 1-2 other instructors. Planned lectures and interactive drills. Adjudicated practice debates and redo speeches. Created curricular tools like progress checks and lecture slides.
+        \item[--] Gave 7 lectures to 5-30 students. Topics ranged from core debate skills to climate adaptation/mitigation, principles of international relations, US leadership, and the history of the Middle East.
+        \item[--] Individually mentored 3-4 students, supplementing lab material with drills and guiding their research process in preparation for the camp tournament.
+
+      \end{itemize}
+      \vspace{-5pt}
+
+    \resumeSubheading
+      {Coding Instructor}{September 2020 -- August 2021}
+      {Come Code With Us}{}
+      \begin{itemize}\small
+      \setlength\itemsep{0em}
+      \item[--] Taught after-school Python lessons and summer bootcamps. Led group classes and identify students for 1-on-1 support. Developed and tested project-based lessons.
+      \item[--] \textbf{Intro Class}: Helped students build a foundation in Python by teaching variables, loops and functions. Introduced them to diverse concepts in CS such as Huffman encoding and game development.
+      \item[--] \textbf{Algorithms Class}: teach and demonstrate algorithms like Minimax and help students implement them in projects such as a tic-tac-toe AI.
+
+      \end{itemize}
+      \vspace{-5pt}
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Electronics Repair} $|$ \emph{Repaired and restored 5 laptops by replacing hinges, Wi-Fi modules, palmrest assemblies, and/or batteries.}}{}
+
+    \resumeProjectHeading
+        {\textbf{Web Scraper} $|$ \emph{Used Selenium to collect data on property tax delinquencies and enable companies to help homeowners pay off debts.}}{}
+
+    \resumeProjectHeading
+        {\textbf{Discord Chatbots} $|$ \emph{Develop utility bots using discord.py and the PRAW Reddit API. Apply Markov chains to mimic user messages.}}{}
+    \vspace{-3pt}
+    \resumeProjectHeading
+        {\emph{Run and maintain bots on a Raspberry Pi using tmux and headless SSH.}}{}
+    
+    \resumeProjectHeading
+        {\textbf{Cura Annonae} $|$ \emph{Github Pages site displaying information about Roman grain subsidies and the translation of a primary source.}}{}
+
+    \resumeProjectHeading
+        {\textbf{Wordle} $|$ \emph{GitHub pages site recreating the popular word game, with a seed function for users to compete with friends.}}{}
+
+    \resumeProjectHeading
+        {\textbf{Verbatim} $|$ \emph{Add features and maintain stability for Verbatim, the MS Word template used by debaters.}}{}
+
+    \resumeProjectHeading
+        {\textbf{Valuation Widget} $|$ \emph{Used HTML/JS/CSS to embed a practice valuation tool on the Hudson Yards Capital website.}}{}
+    
+    \resumeSubHeadingListEnd
+
+    \vspace{1px}
+%-----------Awards-----------
+\section{Awards \& Activities}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{United States of America Computing Olympiad (USACO)} $|$ \emph{Competed at the Silver level.}}{}
+    \resumeProjectHeading
+          {\textbf{UMass Amherst Chancellor's Award} $|$ \emph{Received merit scholarship for being a top out-of-state applicant.}}{}
+    \resumeProjectHeading
+          {\textbf{Lincoln-Douglas Debate} $|$ \emph{Consistently placed in top 8 at national tournaments. Received 6 bids to the Tournament of Champions.}}{}
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
